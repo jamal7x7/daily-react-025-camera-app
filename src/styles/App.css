@@ -1,0 +1,146 @@
+body {
+  background: #062659;
+  font-family: "Montserrat-Regular", "Gotham", "open sans", "Lato", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #EEE;
+}
+
+.App-header {
+  height: 100px;
+  padding: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.camera-app {
+  width: 1080px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #073175;
+  -webkit-box-shadow: 0 90px 100px -50px rgba(0, 0, 0, 0.4), 0 50px 70px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 90px 100px -50px rgba(0, 0, 0, 0.4), 0 50px 70px 10px rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.camera-app ::-moz-selection {
+  background: #062659;
+}
+
+.camera-app ::selection {
+  background: #062659;
+}
+
+.camera-app .camera {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.camera-app .menu-wrap {
+  background: rgba(4, 26, 62, 0.7);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  z-index: 2;
+}
+
+.camera-app .menu-wrap .color-filter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 40px 80px 10px 80px 10px 80px 10px;
+      grid-template-rows: 40px 80px 10px 80px 10px 80px 10px;
+      grid-template-areas: ' . ' ' red ' ' . ' ' green ' ' . ' ' blue ' ' . ';
+}
+
+.camera-app .menu-wrap .color-filter .red {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: red;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.camera-app .menu-wrap .color-filter .red .red-icon {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: #D0021B;
+}
+
+.camera-app .menu-wrap .color-filter .red .red-icon:hover {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.camera-app .menu-wrap .color-filter .green {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: green;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.camera-app .menu-wrap .color-filter .green .green-icon {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: #3DCB02;
+}
+
+.camera-app .menu-wrap .color-filter .green .green-icon:hover {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.camera-app .menu-wrap .color-filter .blue {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: blue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.camera-app .menu-wrap .color-filter .blue .blue-icon {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: #4A90E2;
+}
+
+.camera-app .menu-wrap .color-filter .blue .blue-icon:hover {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=App.css.map */
